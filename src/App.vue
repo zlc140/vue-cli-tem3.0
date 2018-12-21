@@ -1,14 +1,18 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <head-tem></head-tem>
     <router-view/>
   </div>
 </template>
+<script>
+  import headTem from './components/header'
+  export  default {
+    components: { headTem }
+  }
 
+</script>
 <style>
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
